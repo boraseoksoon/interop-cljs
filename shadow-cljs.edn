@@ -1,0 +1,12 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ []
+
+ :builds
+ {:core {:target :node-library
+            :output-to "dist/index.js"
+            :exports {:add com.example.math/add
+                      :subtract com.example.math/subtract}}}}
